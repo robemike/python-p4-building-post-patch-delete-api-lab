@@ -128,7 +128,7 @@ def delete_baked_good(id):
     baked_good = BakedGood.query.filter_by(id=id).first()
     if baked_good == None:
         response_body = {
-            "message": "Baked Good not found in Database."
+            "message": "Baked Good not found in Database"
         }
         response = make_response(response_body, 404) # Not found status code.
 
